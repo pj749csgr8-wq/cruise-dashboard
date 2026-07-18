@@ -58,6 +58,7 @@ export default function LoginPage() {
     setMessage(
       "Account created. Check your email if confirmation is required."
     );
+
     setIsLoading(false);
   }
 
@@ -75,15 +76,12 @@ export default function LoginPage() {
             </h1>
 
             <p className="mt-3 text-slate-600">
-              Sign in to manage your cruises, excursions, packages,
-              receipts and travel documents.
+              Sign in to manage your cruises, excursions, packages, receipts
+              and travel documents.
             </p>
           </header>
 
-          <form
-            onSubmit={handleLogin}
-            className="mt-8 space-y-5"
-          >
+          <form onSubmit={handleLogin} className="mt-8 space-y-5">
             <div>
               <label
                 htmlFor="email"
@@ -165,8 +163,8 @@ export default function LoginPage() {
           </div>
 
           <p className="mt-6 text-center text-xs leading-5 text-slate-500">
-            Your cruise information is private and connected to your
-            individual account.
+            Your cruise information is private and connected to your individual
+            account.
           </p>
         </section>
       </div>
